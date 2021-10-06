@@ -1,3 +1,3 @@
-printt("***************")
+print("***************")
 print("Shayki Abramczyk")
 print("***************")
