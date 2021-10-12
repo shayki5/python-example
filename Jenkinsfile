@@ -2,7 +2,7 @@ pipeline {
     agent none 
     stages {
         stage('Build') { 
-            agent { label 'linux' }
+            agent { label 'master' }
             steps {
                 sh 'python script.py' 
             }
