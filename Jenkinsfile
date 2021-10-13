@@ -7,10 +7,16 @@ pipeline {
                 sh 'python create_file.py' 
             }
         }
-        stage('Run unit tests') { 
+        stage('Get longets word') { 
             agent { label 'master' }
             steps {
                 sh 'python count_words_chars.py' 
+            }
+        }
+        stage('Run unit tests') { 
+            agent { label 'master' }
+            steps {
+                sh 'python unit_test.py' 
             }
         }
     }
